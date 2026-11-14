@@ -1,0 +1,59 @@
+:root {
+    --bs-primary-base: #A31E00;
+    --bs-primary-bg: #A31E00;
+    --bs-primary-contrast: #ffffff;
+
+    --bs-accent-base: #FFD65A;
+
+    --bs-bg-body: #FFFFFF;
+    --bs-fg-body: #161616;
+}
+
+.navbar-brand {
+    font-family: Anton, Helvetica, sans-serif;
+    font-size: 1.5rem;
+}
+
+.navbar-brand .brand-dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-left: 4px;
+}
+
+.btn-outline.custom-border {
+    border-color: #A31E00;
+    color: #A31E00;
+}
+
+.btn-outline.custom-border:hover {
+    background-color: #FFFFFF;
+    color: #A31E00;
+}
+
+.carousel-nav-btn {
+    width: 36px;
+    height: 36px;
+    background-color: transparent;
+    color: var(--bs-primary-base);
+    border: 1px solid var(--bs-primary-base);
+    font-family: DM Sans, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1;
+    transition: all 0.2s ease;
+}
+
+.carousel-nav-btn:hover {
+    background-color: var(--bs-primary-base);
+    color: #ffffff;
+}
+
+h1, h2, h3 {
+    font-family: Anton, Helvetica, sans-serif;
+}
+
+h4, h5, h6, p, a, li, span, label, input, button {
+    font-family: DM Sans, Arial, sans-serif;
+}

@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Contact | Off/Hours</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+        <link href="./styles/custom-style.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+        <script src="./js/script.js" defer></script>
+    </head>
+    
+    <body class="d-flex flex-column min-vh-100"  data-bs-theme="light">
+        <nav class="navbar md:navbar-expand bg-1 border-bottom">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">OFF/HOURS<span class="brand-dot" style="background-color: var(--bs-primary-base);"></span></a>
+
+                <button class="btn-icon navbar-toggler" type="button"
+                        data-bs-toggle="drawer" data-bs-target="#mainNav"
+                        aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon" aria-hidden="true"></span>
+                </button>
+
+                <dialog class="drawer drawer-end" tabindex="-1" id="mainNav" aria-labelledby="mainNavLabel">
+                    <div class="drawer-header">
+                        <h5 class="drawer-title" id="mainNavLabel">Menu</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close"></button>
+                    </div>
+
+                    <div class="drawer-body">
+                        <ul class="navbar-nav md:ms-auto">
+                            <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./index.html#products">Shop</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./index.html#about">About</a></li>
+                            <li class="nav-item"><a class="nav-link active" aria-current="page" href="./contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </dialog>
+            </div>
+        </nav>
+        
+        <header class="bg-2 py-12 text-center">
+            <div class="container">
+                <h1 class="text-5xl mb-5">Contact Us</h1>
+                <p class="text-lg fg-2 mb-5">
+                    We're always happy to hear from you.
+                </p>
+            </div>
+        </header>
+
+        <main class="container py-12">
+            <div class="row g-7">
+                <div class="md:col-8">
+                    <h2>How can we help you?</h2>
+                    <p>
+                        Please fill out the form below and we will get back to you as soon as possible.
+                    </p>
+                    <p class="fg-2">
+                        Office Hours: 10 AM - 10 PM UTC+8 (Monday - Sunday)
+                    </p>
+
+                    <form id="contact-form" class="contact-form" action="mailto:hello@examplewebsite142.com" method="post">
+                        <div class="mb-3">
+                            <label for="full-name" class="form-label">Full name <span class="required">(required)</span></label>
+                            <input type="text" id="full-name" name="full-name" class="form-control" required autocomplete="name" aria-describedby="yourFullName">
+                        </div>
+      
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email address <span class="required">(required)</span></label>
+                            <input type="email" class="form-control" name="email" id="email" aria-describedby="yourEmailAddress" autocomplete="email">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="topic" class="form-label">Topic <span class="required">(required)</span></label>
+                                <select id="topic" name="topic" class="form-control"  aria-describedby="chooseTopic" required>
+                                    <option value="">Choose a topic</option>
+                                    <option value="order">A question about an order</option>
+                                    <option value="product">A question about a product</option>
+                                    <option value="other">Something else</option>
+                                </select>
+                        </div>
+
+                        <div>
+                            <div class="form-field">
+                                <label for="message" class="form-label">Message <span class="required">(required)</span></label>
+                                <textarea class="form-control" id="message" name="message" rows="3" aria-describedby="message-contact-us"></textarea>
+                                <div class="form-text">
+                                Please do not include passwords or payment details.
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn-solid theme-primary mt-4">Submit</button>
+                    </form>
+                </div>
+
+                <div class="md:col-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3>Other ways to reach us</h3>
+                            <p class="fg-2"><a href="mailto:hello@examplewebsite142.com">Email: hello@examplewebsite142.com</a></p>
+                            <p class="fg-2"><a href="tel:+11234567890">Phone: (123) 456-7890</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="bg-1 border-top py-7 mt-auto" id="contact">
+            <div class="container d-flex flex-column md:flex-row md:justify-content-between gap-2 text-center">
+                <span class="fg-2">OFF/HOURS &copy; 2026</span>
+                <div class="d-flex justify-content-center gap-6">
+                    <a href="privacy.html" class="text-decoration-none">Privacy</a>
+                    <a href="terms.html" class="text-decoration-none">Terms</a>
+                </div>
+            </div>
+        </footer>
+
+        <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL" crossorigin="anonymous"></script>
+    </body>
+</html>
